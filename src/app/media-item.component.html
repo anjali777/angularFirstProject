@@ -1,0 +1,12 @@
+
+<h3 style="color:#fff;" >{{ mediaItem.name }}</h3>
+<h3 style="color:#fff;" *ng-if="mediaItem.watchedOn">{{ mediaItem.watchedOn }}</h3>
+<h3 style="color:#fff;" >{{ mediaItem.category }}</h3>
+<h3 style="color:#fff;" >{{ mediaItem.year }}</h3>
+
+<a (click)="onDelete()" href="#" class="delete" style="color:#fff;" >
+    Remove
+</a>
+<a class="details">
+    Watch
+</a>
