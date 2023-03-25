@@ -1,4 +1,12 @@
-<h1>Media Item Page</h1>
-<div>2015</div>
-<p>Action Movie, will check if I able to add video or media file.</p>
-<div>Path of the file will goes here</div>
+
+<h3 style="color:#fff;" >{{ mediaItem.name }}</h3>
+<h3 style="color:#fff;" *ng-if="mediaItem.watchedOn">{{ mediaItem.watchedOn }}</h3>
+<h3 style="color:#fff;" >{{ mediaItem.category }}</h3>
+<h3 style="color:#fff;" >{{ mediaItem.year }}</h3>
+
+<a (click)="onDelete()" href="#" class="delete" style="color:#fff;" >
+    Remove
+</a>
+<a class="details">
+    Watch
+</a>
